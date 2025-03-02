@@ -14,7 +14,6 @@ const handleOtp = async (e) => {
     }
 
     try {
-        const otpBtn = document.getElementById("otp-btn");
         if (otpBtn) {
             otpBtn.disabled = true;
             otpBtn.textContent = "Verifying...";
@@ -40,12 +39,7 @@ const handleOtp = async (e) => {
     } catch (error) {
         console.error("OTP Verification Error:", error);
         alert("Error verifying OTP. Please try again.");
-    } finally {
-        if (otpBtn) {
-            otpBtn.disabled = false;
-            otpBtn.textContent = "Verify OTP";
-        }
-    }
+    } 
 };
 
 // Auto-check authentication when OTP page loads
