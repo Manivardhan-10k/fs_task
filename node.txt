@@ -1,0 +1,17 @@
+express 
+nodemon 
+mysql2 
+nodemailer
+bcrpyt 
+jsonwebtoken  
+multer
+dotenv
+
+
+
+node  architecture 
+
+MVC 
+M- model   -- database connections queries
+V-view   --html files
+C- controller --
